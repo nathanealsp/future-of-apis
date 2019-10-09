@@ -4,11 +4,14 @@
   "private": true,
   "dependencies": {
     "@apollo/react-hooks": "^3.1.2",
+    "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.17",
     "apollo-boost": "^0.4.4",
     "graphql": "^14.5.8",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.1.1",
+    "styled-components": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

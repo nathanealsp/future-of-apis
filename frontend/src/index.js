@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ApolloClient, { gql } from 'apollo-boost';
+import ApolloClient from 'apollo-boost';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -8,19 +8,6 @@ import * as serviceWorker from './serviceWorker';
 export const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql',
 });
-// or you can use `import gql from 'graphql-tag';` instead
-
-client
-  .query({
-    query: gql`
-      {
-        songs {
-          name
-        }
-      }
-    `,
-  })
-  .then(result => result);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

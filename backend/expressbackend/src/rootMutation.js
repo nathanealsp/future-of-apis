@@ -27,7 +27,14 @@ export const RootMutationType = new GraphQLObjectType({
           return find(ARTISTS, { name: name.toLowerCase() });
         }
 
-        return [...SONGS, { name, album, artistId: artistId(name).id }];
+        return [
+          ...SONGS,
+          {
+            name,
+            album,
+            artistId: artistId(name) ? artistId(name).id : 24210 + 10,
+          },
+        ];
       },
     },
     addArtist: {
