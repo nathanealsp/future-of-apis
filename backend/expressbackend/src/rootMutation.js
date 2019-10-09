@@ -6,7 +6,7 @@ import {
 } from 'graphql';
 import find from 'lodash/find';
 
-import { ARTISTS, SONGS, EVENTS } from '../database';
+import { ARTISTS, SONGS, EVENTS } from '../../database';
 import { SongType, ArtistType, EventType } from './typeDefs';
 
 export const RootMutationType = new GraphQLObjectType({

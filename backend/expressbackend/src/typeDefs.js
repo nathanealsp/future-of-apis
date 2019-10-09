@@ -8,7 +8,7 @@ import {
 
 import find from 'lodash/find';
 import filter from 'lodash/filter';
-import { ARTISTS, SONGS, EVENTS } from '../database';
+import { ARTISTS, SONGS, EVENTS } from '../../database';
 
 export const SongType = new GraphQLObjectType({
   name: 'SongType',

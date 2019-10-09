@@ -2,7 +2,7 @@ import { GraphQLObjectType, GraphQLInt, GraphQLList } from 'graphql';
 import filter from 'lodash/filter';
 import find from 'lodash/find';
 
-import { ARTISTS, SONGS, EVENTS } from '../database';
+import { ARTISTS, SONGS, EVENTS } from '../../database';
 import { SongType, ArtistType, EventType } from './typeDefs';
 
 export const RootQueryType = new GraphQLObjectType({
